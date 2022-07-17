@@ -1,0 +1,23 @@
+{
+  "name": "drv_smtp_telegram",
+  "version": "1.0.0",
+  "description": "Receba fotos do DVR no seu Telegram",
+  "main": "app.js",
+  "dependencies": {
+    "mailparser": "^3.5.0",
+    "node-fetch": "^3.2.7",
+    "smtp-server": "^3.11.0",
+    "telegraf": "^3.38.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dvr",
+    "intelbras",
+    "smtp"
+  ],
+  "author": "Santiago Acevedo",
+  "license": "ISC"
+}
