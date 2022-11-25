@@ -17,10 +17,15 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 <!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
 * NodeJS
 * fs, https, smtp-server, mailparser e telegraf
+> Qualquer modelo de cámera ou dvr, que envie Emails é compatível com este script.
 
 ## 💻 Configuração de Email
 
+* Como exemplo foi utilizada a porta 587
+
+> Exemplo Intelbras
 <img src="msedge_Bwhvw6kJ6R.png" alt="exemplo">
+> Exemplo HikVision
 <img src="msedge_SkQxaS6gGV.png" alt="exemplo">
 
 ## 📝 Licença
