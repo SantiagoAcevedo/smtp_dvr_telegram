@@ -17,7 +17,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 <!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
 * NodeJS
 * fs, https, smtp-server, mailparser e telegraf
-> Qualquer modelo de cámera ou dvr, que envie Emails é compatível com este script.
+> Qualquer modelo de cámera ou dvr, que envie Emails é compatível.
 
 ## 💻 Configuração de Email
 
