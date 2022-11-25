@@ -22,6 +22,8 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 ## 💻 Configuração de Email
 
 * Como exemplo foi utilizada a porta 587
+* A conta e senha devem ser modificados no script
+* Para obter o token e o chat id do Telegram -> https://core.telegram.org/bots/api
 
 > Exemplo Intelbras
 <img src="msedge_Bwhvw6kJ6R.png" alt="exemplo">
@@ -29,7 +31,6 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 <img src="msedge_SkQxaS6gGV.png" alt="exemplo">
 
 ## 📝 Licença
-Projeto realizado para estudo e pesquisa, sem fins lucrativos.
 
 Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
 
