@@ -27,6 +27,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 > Exemplo Intelbras
 <img src="msedge_Bwhvw6kJ6R.png" alt="exemplo">
+
 > Exemplo HikVision
 <img src="msedge_SkQxaS6gGV.png" alt="exemplo">
 
