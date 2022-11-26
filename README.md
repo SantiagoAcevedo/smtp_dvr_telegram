@@ -9,7 +9,7 @@
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
 - [x] Melhoria na velocidade de envio 
-- [ ] Upload da imagem para alguma API (Google Drive, SkyDrive, etc)
+- [ ] Upload da imagem para alguma API (Google Drive, OneDrive, etc)
 
 ## 💻 Pré-requisitos
 
