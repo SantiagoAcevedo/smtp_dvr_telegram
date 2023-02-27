@@ -40,35 +40,44 @@ const server = new SMTPServer({
                     if (err)
                         console.log(err);
                     else {
-                        console.log("Arquivo "+item.filename+" salvo\n");                      
-						app.telegram.sendPhoto(chatId, { source: 'img/'+item.filename })
-						fs.unlink('img/'+item.filename, (err) => {
-						if (err) {
-							console.error(err)
-							return
-						  }
-						})
+                        console.log("Arquivo "+item.filename+" salvo\n");
+                        //console.log("Erro ao salvar imagem");
+                        app.telegram.sendPhoto(chatId, { source: 'img/'+item.filename }).then(function(data){
+                                console.log(data);
+                                fs.unlink('img/'+item.filename, (err) => {
+                                    if (err) {
+                                        console.error(err)
+                                        return
+                                    }
+                                  //file removed
+                                })
+                        });
+                        
                     }
-                });				
+                });
+                //app.telegram.sendPhoto(chatId, { source: 'img/'+item.filename })
+                
             }
             if (err)
                 console.log("Error:" , err)
-				console.log(parsed)
+            //console.log(parsed)
+            console.log(parsed)
+            //let img = encodeURI(parsed.attachments);
             let fix = encodeURI(parsed.text);
             if(parsed.attachments.length > 0){
                 parsed.attachments.forEach(myFunction)
                 let envia = app.telegram.sendMessage(chatId, parsed.text);
-				console.log(envia);
+                console.log(envia);
             }else{
                 let envia = app.telegram.sendMessage(chatId, parsed.text);
-				console.log(envia);
-			}	
+                console.log(envia);
+            }    
 
             console.log('DEBUG::: '+parsed.subject)
             stream.on("end", callback)
         })
-        stream.pipe(process.stdout);
+        stream.pipe(process.stdout); // print message to console
         stream.on('end', callback);
     },
 });
-server.listen(587, 'SEU IP');
+server.listen(587, 'SEUIP');
